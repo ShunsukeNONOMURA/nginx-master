@@ -1,0 +1,8 @@
+version: "3"
+services:
+  nginx:
+    image: nginx:1.21
+    network_mode: host
+    volumes:
+      - ./html:/var/www/html
+    restart: always
